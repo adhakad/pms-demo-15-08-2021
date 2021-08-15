@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+/********************newVideoGrid********************/
+#newVideoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#newVideoGrid video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transform: scaleX(-1);
+  box-sizing: border-box;
+}
+.newVideo_item {
+  position: relative;
+  border: 1px solid aqua;
+  width: 49%;
+}
+.newVideo_name {
+  z-index: 2;
+  bottom: 20.5px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+/********************hostVideoGrid********************/
+#hostVideoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;height: 60vh;position: fixed;z-index: 3;
+  top: 0;
+  left: 0;
+}
+#hostVideoGrid video {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 4px;
+  transform: scaleX(-1);
+  box-sizing: border-box;
+}
+.hostVideo_item {
+  position: relative;
+  border: 1px solid aqua;
+  width:100%;
+  
+}
+.hostVideo_name {
+  z-index: 2;
+  bottom: 20.5px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+/********************joinVideoGrid********************/
+#joinVideoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#joinVideoGrid video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transform: scaleX(-1);
+  box-sizing: border-box;
+}
+.joinVideo_item {
+  position: relative;
+  border: 1px solid aqua;
+  width: 49%;
+}
+.joinVideo_name {
+  z-index: 2;
+  bottom: 20.5px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+/********************conNewVideoGrid********************/
+#conNewVideoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+}
+#conNewVideoGrid video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transform: scaleX(-1);
+  box-sizing: border-box;
+}
+.conNewVideo_item {
+  position: relative;
+  border: 1px solid aqua;
+  width: 50%;
+}
+.conNewVideo_name {
+  z-index: 2;
+  bottom: 20.5px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: 100%;
+  min-height: calc(80vh - 48px);
+}
+.loading_spinner {
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #e4e5e6;
+  animation: spin 1s linear infinite;
+  border-color: #e4e5e6 transparent;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+.mobile-margin{
+  height: 60vh;
+}
+
+@media(min-width:1200px){
+    
+  #hostVideoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;height: 93vh;position: fixed;z-index: 3;border: 1px solid orange;
+  }
+  #hostVideoGrid video {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 4px;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  .hostVideo_item {
+    position: relative;
+    border: 1px solid aqua;
+    width: 100%;
+    
+  }
+  .hostVideo_name {
+    z-index: 2;
+    bottom: 20.5px;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  /**************************/
+  #conNewVideoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;height: 25vh;
+  }
+  #conNewVideoGrid video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transform: scaleX(-1);
+    box-sizing: border-box;
+  }
+  .conNewVideo_item {
+    position: relative;
+    border: 1px solid aqua;
+    width: 50%;
+  }
+  .conNewVideo_name {
+    z-index: 2;
+    bottom: 20.5px;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+}
